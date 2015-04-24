@@ -8,7 +8,6 @@ export default Ember.Service.extend({
   // you could also do ajax request inside this setup method
   // if you needed to fetch data from remote source.
   setup: Ember.on('init', function() {
-    var self = this;
     var rainbow = Ember.A([
       'red', 
       'orange', 
@@ -33,7 +32,7 @@ export default Ember.Service.extend({
     this._super(); // call _super() so rest of ember has chance to init correctly
   }),  
   
-  // These are just plain old properties of our service. They are start off null
+  // These are just plain old properties of our service. They start off null.
   // An Ember Service is just an Ember.Object with a few extra features
   // No need to use ember data explicitly if you don't want to create model
   colors: null,
