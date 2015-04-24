@@ -1,0 +1,24 @@
+<h2>What are the colors of the rainbow?</h2>
+
+<ul>
+{{#each genericData.colors as | color |}}
+  <li>{{color}}</li>
+{{/each}}
+</ul>
+
+<h3>Add a color?</h3>
+{{input type="text" value=myColor}} <button {{action 'addColor' myColor}}>Add Color</button>
+
+
+<hr>
+
+<h2>What planets are in our solar system?</h2>
+
+<ul>
+{{#each genericData.planets as | planet |}}
+  <li>{{planet}}</li>
+{{/each}}
+</ul>
+
+<h3>Add a planet?</h3>
+{{input type="text" value=myPlanet}} <button {{action 'addPlanet' myPlanet}}>Add Planet</button>
